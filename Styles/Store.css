@@ -1,0 +1,295 @@
+﻿.wid-80 {
+    width: 80%;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-h {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card:nth-child(2n+1) {
+    float: left;
+}
+
+.login-flex {
+    max-width: 500px;
+    margin: 48px auto;
+}
+
+.flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    margin: auto;
+}
+
+.block {
+    display: block;
+    width: fit-content;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body {
+    font-family: Garamond, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-card {
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #b7c9e2;
+    background: #b7c9e2;
+    color: white;
+    margin: 15px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+    .product-tumb img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+.product-details {
+    padding: 20px 30px;
+}
+
+    .product-details h4 a {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        color: #363636;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .product-details h4 a:hover {
+            color: #fbb72c;
+        }
+
+    .product-details p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 18px;
+        color: #999;
+    }
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+    .product-bottom-details div {
+        float: left;
+        width: 50%;
+    }
+
+.product-price {
+    font-size: 18px;
+    color: #36454F;
+    font-weight: 900;
+}
+
+    .product-price small {
+        font-size: 80%;
+        font-weight: 400;
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+.details-card {
+    width: 80%;
+    margin: auto;
+}
+
+.description-container {
+    position: relative;
+}
+
+.main-description1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-description h3 {
+    font-size: 2rem;
+}
+
+.add-inputs,
+.add-inputs input {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+    .add-inputs button {
+        border-radius: 0;
+    }
+
+    .add-inputs input {
+        height: 48px;
+        width: 65px;
+        border-radius: 0;
+    }
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.8rem;
+}
+
+.social-list {
+    padding: 0;
+    list-style: none;
+}
+
+    .social-list li {
+        float: left;
+        padding: 6px 8px;
+        margin-right: 12px;
+    }
+
+        .social-list li a {
+            color: black;
+            font-size: 2rem;
+        }
+
+.select-colors .color {
+    display: inline-block;
+    border: 1px solid grey;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: black;
+}
+
+    .select-colors .color.red {
+        background-color: red;
+    }
+
+    .select-colors .color.silver {
+        background-color: silver;
+    }
+
+    .select-colors .color.black {
+        background-color: black;
+    }
+
+.form-check-input[type=checkbox].filled-in:checked + label:after,
+label.btn input[type=checkbox].filled-in:checked + label:after {
+    border: 2px solid #4285f4;
+    background-color: #4285f4;
+}
+
+.mb-4-5 {
+    margin-bottom: 24px;
+}
+
+#checkout {
+    margin-left: -350px;
+}
+
+.mydatagrid,
+.mydatagrid1 {
+    width: 100%;
+    border: solid 2px black;
+    min-width: 50%;
+}
+
+.header,
+.header1 {
+    background-color: #646464;
+    font-family: Arial;
+    color: White;
+    height: 25px;
+    font-size: 16px;
+}
+
+.rows,
+.rows1 {
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    border: none 1px transparent;
+}
+
+    .rows:hover,
+    .rows1:hover {
+        background-color: #b7c9e2;
+        font-family: Arial;
+        color: #fff;
+    }
+
+.selectedrow {
+    background-color: #b7c9e2;
+    font-family: Arial;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mydatagrid a,
+.mydatagrid1 a {
+    background-color: Transparent;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .mydatagrid a:hover,
+    .mydatagrid1 a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+.mydatagrid span,
+.mydatagrid1 span {
+    background-color: #c9c9c9;
+    color: #000;
+    padding: 5px;
+}
+
+.pager,
+.pager1 {
+    background-color: #646464;
+    font-family: Arial;
+    color: White;
+    height: 30px;
+    text-align: left;
+}
+
+.mydatagrid td,
+.mydatagrid th,
+.mydatagrid1 td,
+.mydatagrid1 th {
+    padding: 5px;
+}

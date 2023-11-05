@@ -1,0 +1,269 @@
+﻿@import "compass/css3";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Chango&family=Roboto&display=swap");
+
+/* Reset default styles for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling for the page */
+body {
+    background: #f0f0f0; /* Changed background color */
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; /* Changed padding */
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #478298; /* Changed background color */
+    height: 120px; /* Changed height */
+    position: fixed;
+    width: 100%;
+    z-index: 9999; /* Changed z-index */
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    padding: 0 10px; /* Changed padding */
+    width: 40%; /* Changed width */
+}
+
+.login a {
+    text-decoration: none;
+    color: #1a1a1a; /* Changed color */
+}
+
+/* Item styling */
+.item {
+    background: #fff;
+    border-radius: 8px; /* Changed border-radius */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Changed margin */
+    position: relative;
+    display: flex;
+    
+}
+
+    .item .inner_container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item img {
+        border-radius: 8px 0 0 8px; /* Changed border-radius */
+        width: 100%;
+        height: auto;
+        vertical-align: middle; /* Changed vertical-align */
+    }
+
+    .item .preview {
+        width: 25%; /* Changed width */
+    }
+
+    .item .details {
+        padding: 0px 20px; /* Changed padding */
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+        .item .details h3 {
+            margin: 0;
+            font-size: 2em;
+            font-family: "Amatic SC", cursive;
+            color: #1a1a1a; /* Changed color */
+        }
+
+        .item .details p {
+            font-size: 1em;
+            color: #575756; /* Changed color */
+        }
+
+        .item .details input[type="number"] {
+            width: 40px; /* Changed width */
+            height: 28px; /* Changed height */
+            padding: 2px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+/* Summary section styling */
+.summary {
+    padding: 15px; /* Changed padding */
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 60px; /* Changed margin */
+}
+
+.summary-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.picker {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.quantity-text {
+    margin: 0 15px; /* Changed margin */
+    font-size: 1.1em; /* Changed font-size */
+    color: #1a1a1a; /* Changed color */
+}
+
+.sub-total, .taxes {
+    font-size: 1.3em; /* Changed font-size */
+    margin: 8px 0; /* Changed margin */
+    color: #1a1a1a; /* Changed color */
+}
+
+.btn-summary {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Amatic SC", cursive;
+}
+
+.btn-reverse {
+    background-color: #fff;
+    color: #478298;
+    border: 1px solid #478298;
+}
+
+.delivery-payment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px; /* Changed margin */
+}
+
+.delivery-address, .payment-details {
+    width: 49%;
+    border-radius: 8px; /* Changed border-radius */
+    box-shadow: 0 0 4px #1a1a1a 30; /* Changed box-shadow */
+    background-color: #fff;
+    padding: 0px 20px 20px 20px; /* Changed padding */
+    margin-bottom: 15px; /* Changed margin */
+}
+
+h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 1.8em; /* Changed font-size */
+    color: #1a1a1a; /* Changed color */
+}
+
+.coupon {
+    display: flex;
+    border-radius: 8px; /* Changed border-radius */
+    box-shadow: 0 0 4px #1a1a1a 30; /* Changed box-shadow */
+    background-color: #fff;
+    padding: 3px 20px; /* Changed padding */
+    align-items: center;
+    margin-bottom: 15px; /* Changed margin */
+}
+
+    .coupon h3 {
+        margin-right: 20px; /* Changed margin */
+        font-family: "Amatic SC", cursive;
+        font-size: 1.8em; /* Changed font-size */
+        color: #1a1a1a; /* Changed color */
+    }
+
+input {
+    border-radius: 8px; /* Changed border-radius */
+    height: 35px; /* Changed height */
+    border: 1px solid #ccc; /* Added border */
+    padding: 0 10px; /* Changed padding */
+}
+
+/* Button styling */
+.btn-quantity, .btn-remove, .btn-checkout {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    line-height: 25px;
+    transition: background-color 0.3s ease;
+    width: 40%;
+    font-size: 1.8em; /* Changed font-size */
+    padding: 8px 0; /* Changed padding */
+}
+
+.btn-quantity {
+    font-size: 0.7em; /* Changed font-size */
+    box-shadow: 0 0 4px #1a1a1a 3; /* Changed box-shadow */
+}
+
+    .btn-quantity.plus {
+        color: #478298;
+    }
+
+        .btn-quantity.plus:hover {
+            color: #004d00;
+        }
+
+    .btn-quantity.minus {
+        color: #478298;
+    }
+
+        .btn-quantity.minus:hover {
+            color: #c00;
+        }
+
+.btn-remove {
+    position: absolute;
+    bottom: 15px; /* Changed bottom */
+    right: 15px; /* Changed right */
+    z-index: 10;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em; /* Changed font-size */
+    color: #1a1a1a; /* Changed color */
+}
+
+    .btn-remove:hover {
+        color: #060606;
+    }
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Changed background color */
+    color: white;
+    text-align: center;
+    padding: 8px; /* Changed padding */
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 900px) {
+    /* ... Add responsive styles here ... */
+}
+
+@media only screen and (max-width: 768px) {
+    /* ... Add responsive styles here ... */
+}
+
+@media only screen and (max-width: 480px) {
+    /* ... Add responsive styles here ... */
+}
