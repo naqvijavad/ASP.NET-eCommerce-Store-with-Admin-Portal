@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ThePerfumeStore.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Starwood Perfume</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Styles/Store.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #b7c9e2; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+        <a class="navbar-brand" style="margin-left: 25px; font-size: 24px; font-weight: bold; color: #4875b4; text-decoration: none;">
+            Welcome To <span style="color: #333;">Starwood Perfume Store</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-2">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home.aspx" style="color: #003554; font-weight: bold; text-decoration: none; margin:5px; transition: color 0.3s; font-size: 25px;">
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cart.aspx" style="color: #003554; font-weight: bold; text-decoration: none; margin:5px; transition: color 0.3s; font-size: 25px;">
+                        Cart <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Order.aspx" style="color: #003554; font-weight: bold; text-decoration: none; margin:5px; transition: color 0.3s; font-size: 25px;">
+                        Order <span class="sr-only"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cart.aspx" style="color: #003554; font-weight: bold; text-decoration: none; margin:5px; transition: color 0.3s; font-size: 25px;">
+                        Admin<span class="sr-only"></span>
+                    </a>
+                </li>
+                
+                <li>
+                    <asp:Button ID="btnLoginmas" runat="server" CssClass="btn" OnClick="btn_login" CausesValidation="False" ValidateRequestMode="Disabled"  Style="background-color:#b7c9e2; color: #003554; font-weight: bold; margin:5px; font-size:25px" />
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+
+ 
+<footer class="fixed-bottom bg-dark text-white" >
+        <div class="bg-dark py-1 text-center">
+        <a class="text-white text-decoration-none" href="#">© 2023 Copyright: All Rights Reserved To Team The Perfume Store.</a>
+    </div>
+    
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <a class="text-white text-decoration-none" href="#">Krushangi Patel(8859466)</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a class="text-white text-decoration-none" href="#">Parv Isotiya(8856428)</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a class="text-white text-decoration-none" href="#">Bhavika Patel(8826226)</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a class="text-white text-decoration-none" href="#">Javad Naqvi(8841544)</a>
+            </div>
+        </div>
+    
+</footer>
+
+
+</body>
+</html>
